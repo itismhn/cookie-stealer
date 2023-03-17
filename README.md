@@ -1,5 +1,5 @@
 # cookie-stealer
-Cookie Stealer in some languages
+Cookie Stealer in PHP
 
 ## usage
 #### step1 - start web server on your own web server
