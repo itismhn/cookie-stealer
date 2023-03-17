@@ -10,7 +10,7 @@ sudo systemctl start apache 2
 ```
 
 #### step2 
-clone the repository in ```/var/www/html/''' directory
+clone the repository in ``` /var/www/html/ ''' directory
 
 #### step3
 now if any cookie or data sent to your webserver by your link, it'll save in cookie file.
