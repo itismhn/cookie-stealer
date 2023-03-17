@@ -27,3 +27,6 @@ here is some payload for vulnerabilities like XSS to steal cookies of your victi
 
 ### p1.php
 p1.php is basic version of cookie stealer that recieve and store just value of txt parameter.
+
+### p2.php
+p2.php store more data from victim. you can store ``` date user-agent referrer ``` too.
