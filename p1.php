@@ -6,5 +6,4 @@ fwrite($file,$result);
 fclose($file);
 $referer = $_SERVER['HTTP_REFERER'] ?? null;
 header('Location: '.$referer);
-
 ?>
