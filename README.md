@@ -35,3 +35,7 @@ p1.php is a basic version of cookie stealer that receives and stores just the va
 
 ### p2.php
 p2.php stores more data from the victim. you can store ``` date user-agent referrer ``` too.
+
+
+### p3.php
+p3.php is used to clear the content of cookie.txt file.
