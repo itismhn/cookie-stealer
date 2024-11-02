@@ -6,7 +6,7 @@ simple cookie stealer in PHP
 ```
 sudo apt update && apt upgrade -y
 sudo apt install apache2
-sudo systemctl start apache2
+sudo systemctl start apache 2
 ```
 
 #### step2 
